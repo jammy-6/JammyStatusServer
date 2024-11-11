@@ -9,7 +9,7 @@ public:
     int RegUser(const std::string& name, const std::string& email,  const std::string& pwd);
     bool checkUserExist(const std::string& name, const std::string& email);
     bool updatePassword(const std::string& name, const std::string& email,const std::string& newPasswd);
-    bool checkUserPassword(const std::string& name, const std::string& passwd);
+    bool checkUserPassword(const std::string& name, const std::string& passwd,UserInfo& userInfo);
 private:
     MysqlMgr();
     MysqlDao  _dao;
